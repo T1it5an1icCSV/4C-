@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid Background="#FFF6CFCF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="204*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="190*"/>
+            <RowDefinition Height="115*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="28px" TextAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap"><Run Language="ru-ru" Text="Приветик"/><LineBreak/><Run Language="ru-ru" Text="Хочешь пройти тест или  внести в него изменения?"/></TextBlock>
+        <Button x:Name="proiti" Content="Пройти тест" FontSize="30px" Margin="20" Grid.Row="1"  Background="#FFCAF6F4" Click="proiti_Click" />
+        <Button x:Name="izmen" Content="Изменить тест" FontSize="30px" Grid.Row="2" Margin="20,40" Background="#FFCAF6F4" Click="izmen_Click"/>
+        <TextBox x:Name="Reg_Admin"  Grid.Row="3" TextAlignment="Center" FontSize="20px" TextWrapping="Wrap" Margin="20,25" Background="#FFEEA7A5" TextChanged="TextBox_TextChanged"/>
+    </Grid>
+</Window>
+       
